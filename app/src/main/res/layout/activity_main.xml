@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#ffe638"
+                android:text="1-15"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#ffe638"
+                android:text="15-31"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#718da5"
+                android:text="Mensual"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#718da5"
+                android:text="Quincenal 1"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#718da5"
+                android:text="Quincenal 2"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Ingresos"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/quincenal1"
+                android:text="S/. 2951.37"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#ffe638"
+                android:id="@+id/quincenal2"
+                android:text="S/. 1551.37"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:background="#ffe638"
+                android:text="S/. 1400"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="comida-pasajes"
+                android:gravity="left"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/txt_comida_pasaje_total"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/txt_comida_pasaje_q1"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/txt_comida_pasaje_q2"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Internet"
+                android:gravity="left"
+                android:padding="3dip" />
+            <TextView
+                android:text="-50"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="-50"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Préstamo"
+                android:gravity="left"
+                android:padding="3dip" />
+            <TextView
+                android:text="-250"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="RPC"
+                android:gravity="left"
+                android:padding="3dip" />
+            <TextView
+                android:text="-100"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="-100"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Netflix+Spotify"
+                android:gravity="left"
+                android:padding="3dip" />
+            <TextView
+                android:text="-56.99"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="-56.99"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Cable"
+                android:gravity="left"
+                android:padding="3dip" />
+            <TextView
+                android:text="-25"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="-25"
+                android:gravity="center"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip" />
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Dias"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/et_dias"
+                android:text="15"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Almuerzo"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/et_almuerzo"
+                android:text="10"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Extras"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/et_extras"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Quincena 1"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/tv_balance_q1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/tv_residuo_q1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#23c91d"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Quincena 2"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/tv_balance_q2"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/tv_residuo_q2"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#23c91d"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Mensual"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/tv_balance_total"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/tv_residuo_total"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#23c91d"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"/>
+</LinearLayout>
