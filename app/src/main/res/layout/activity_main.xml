@@ -120,24 +120,6 @@
         </TableRow>
         <TableRow>
             <TextView
-                android:text="Préstamo"
-                android:gravity="left"
-                android:padding="3dip" />
-            <TextView
-                android:text="-250"
-                android:gravity="center"
-                android:padding="3dip" />
-            <TextView
-                android:text="0"
-                android:gravity="center"
-                android:padding="3dip" />
-            <TextView
-                android:text="0"
-                android:gravity="center"
-                android:padding="3dip" />
-        </TableRow>
-        <TableRow>
-            <TextView
                 android:text="RPC"
                 android:gravity="left"
                 android:padding="3dip" />
